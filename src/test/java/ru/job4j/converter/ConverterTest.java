@@ -22,4 +22,5 @@ public class ConverterTest {
         float eps = 0.001f;
         Assert.assertEquals(expected, out, eps);
     }
+
 }
