@@ -3,8 +3,6 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class MaxTest {
 
     @Test
@@ -26,7 +24,7 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax1To1Then5() {
+    public void  whenTwoNumbersEqual5ThenMaxIs5() {
         int left = 5;
         int right = 5;
         int result = Max.max(left, right);
