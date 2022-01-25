@@ -25,9 +25,9 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersFromElevenToTwentyTwoThenOneHundredAndTwo() {
         int start = 11;
-        int finish = 22;
+        int finish = 20;
         int result = Counter.sumByEven(start, finish);
-        int expected = 102;
+        int expected = 80;
         Assert.assertEquals(expected, result);
     }
 }
