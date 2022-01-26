@@ -23,7 +23,7 @@ public class CounterTest {
     }
 
     @Test
-    public void whenSumEvenNumbersFromElevenToTwentyTwoThenOneHundredAndTwo() {
+    public void whenSumEvenNumbersFromElevenToTwentyThenEighty() {
         int start = 11;
         int finish = 20;
         int result = Counter.sumByEven(start, finish);
