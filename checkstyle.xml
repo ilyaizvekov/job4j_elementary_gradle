@@ -5,7 +5,7 @@
 
 <module name="Checker">
 
-    <!-- File charset must be UTF-8 -->
+    <!--File charset must be UTF-8-->
     <property name="charset" value="UTF-8"/>
 
     <!--Расширение файла должно быть java, properties, xml-->
