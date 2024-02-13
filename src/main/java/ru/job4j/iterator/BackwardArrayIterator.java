@@ -2,6 +2,7 @@ package ru.job4j.iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.stream.IntStream;
 
 public class BackwardArrayIterator implements Iterator<Integer> {
     private final int[] data;
@@ -9,11 +10,12 @@ public class BackwardArrayIterator implements Iterator<Integer> {
 
     public BackwardArrayIterator(int[] data) {
         this.data = data;
+        this.point = data.length - 1;
     }
 
     @Override
     public boolean hasNext() {
-        return point < data.length;
+        return point >= 0;
     }
 
     @Override
@@ -21,6 +23,6 @@ public class BackwardArrayIterator implements Iterator<Integer> {
         if (!hasNext()) {
             throw new NoSuchElementException();
         }
-        return data[data.length - 1 - point++];
+        return data[point--];
     }
 }
