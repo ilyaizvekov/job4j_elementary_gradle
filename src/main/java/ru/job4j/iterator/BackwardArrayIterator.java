@@ -2,7 +2,6 @@ package ru.job4j.iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.stream.IntStream;
 
 public class BackwardArrayIterator implements Iterator<Integer> {
     private final int[] data;
